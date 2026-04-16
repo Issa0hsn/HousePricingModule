@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 import seaborn as sns
-df=pd.read_csv("C:\\Users\\ALAMEEN\\PythonWork\\MlProject\\cleaned__data_training.csv")  
+df=pd.read_csv("cleaned_data_training.csv") # if it does not work you can put the full path  
 x=df.drop('SalePrice', axis=1)  
 y=df['SalePrice']  
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
